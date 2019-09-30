@@ -1,0 +1,8 @@
+<%= form_with(url: genrate_codes_secret_codes_path) do |form| %>
+  
+  <%= form.select :no_of_codes, [1, 10, 20, 50, 100], selected: 10%>
+
+  <div class="actions">
+    <%= form.submit "Genrate Code" %>
+  </div>
+<% end %>
